@@ -32,5 +32,14 @@ fasta_sequence_lengths.append(sequence_length)
 # Closing the file:
 fastafile.close()
 
+#create a function which prints the sorted sequence length as wella s the
+# maxmum and minumum sequence lenght
+def results_investigation(length_list):
+	print(sorted(length_list))	
+	print("The minimum is {} and the maxmium is {}." .format(min(length_list), max(length_list)))
+
+#call the function
+results_investigation(fasta_sequence_lengths)
+
 #print the maximum of sequence lengths
-print(max(fasta_sequence_lengths))
+#print(max(fasta_sequence_lengths))
